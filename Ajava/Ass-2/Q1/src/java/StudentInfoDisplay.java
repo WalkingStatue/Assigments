@@ -41,7 +41,7 @@ public class StudentInfoDisplay extends JFrame {
         student.setEmailAddress("saijadhruv8803@gmail.com");
         student.setCity("Ahmedabad");
         student.setRollNo(3159);
-        student.setCollegeName("KSSBMIT");
+        student.setCollegeName("K.S.S.B.M.I.T.");
 
         // Displaying details in text area
         JLabel headingLabel = new JLabel("Student Information");
