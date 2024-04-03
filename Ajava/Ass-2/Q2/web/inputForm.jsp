@@ -4,25 +4,27 @@
     Author     : Infam
 --%>
 
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Submitted Information</title>
-</head>
-<body>
-    <h2>Submitted Information</h2>
-    <p>Name: ${param.name}</p>
-    <p>Email: ${param.email}</p>
-    <p>Gender: ${param.gender}</p>
-    <p>Known Languages: 
-        <c:forEach var="language" items="${paramValues.language}">
-            ${language} 
-        </c:forEach>
-    </p>
-    <p>Address: ${param.address}</p>
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form action="submitForm.jsp">
+            Name: <input type="text" name="name" value="" /><br></br>
+            Email: <input type="text" name="email" value="" /><br></br>
+            Gender: <input type="radio" name="gender" value="Male" checked="checked" />Male
+                    <input type="radio" name="gender" value="Female" />Female<br></br>
+            Language: <input type="checkbox" name="language" value="Gujrati" />Gujrati
+                      <input type="checkbox" name="language" value="English" />English
+                      <input type="checkbox" name="language" value="Hindi" />Hindi<br></br>
+            Address: <textarea name="address" rows="4" cols="20"> </textarea><br></br>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
 </html>
+
 
 

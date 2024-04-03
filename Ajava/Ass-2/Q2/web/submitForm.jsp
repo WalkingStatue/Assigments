@@ -4,29 +4,27 @@
     Author     : Infam
 --%>
 
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>User Information Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
     <body>
-        <h2>User Information Form</h2>
-        <form action="submitForm.jsp" method="post">
-            Name: <input type="text" name="name" required /><br/>
-            Email: <input type="email" name="email" required /><br/>
-            Gender:
-            <input type="radio" name="gender" value="Male" required /> Male
-            <input type="radio" name="gender" value="Female" required /> Female<br/>
-            Known Languages:<br/>
-            <input type="checkbox" name="language" value="Java" /> Java<br/>
-            <input type="checkbox" name="language" value="Python" /> Python<br/>
-            <input type="checkbox" name="language" value="C" /> C<br/>
-            Address:<br/>
-            <textarea name="address" required></textarea><br/>
-            <input type="submit" value="Submit" />
-        </form>
+        <%
+            String name= request.getParameter("name");
+            String email= request.getParameter("email");
+            String gender= request.getParameter("gender");
+            String language= request.getParameter("language");
+            String address = request.getParameter("address");
+        %>
+        <h3><%= name %></h3><br></br>
+        <h3><%= email %></h3><br></br>
+        <h3><%= gender %></h3><br></br>
+        <h3><%= language %></h3><br></br>
+        <h3><%= address %></h3><br></br>
     </body>
 </html>
+
 
