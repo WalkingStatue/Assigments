@@ -19,11 +19,11 @@
             String language= request.getParameter("language");
             String address = request.getParameter("address");
         %>
-        <h3><%= name %></h3><br></br>
-        <h3><%= email %></h3><br></br>
-        <h3><%= gender %></h3><br></br>
-        <h3><%= language %></h3><br></br>
-        <h3><%= address %></h3><br></br>
+        <h3>Name:<%= name %></h3><br></br>
+        <h3>Email:<%= email %></h3><br></br>
+        <h3>Gender:<%= gender %></h3><br></br>
+        <h3>Languages:<%= language %></h3><br></br>
+        <h3>Address:<%= address %></h3><br></br>
     </body>
 </html>
 
