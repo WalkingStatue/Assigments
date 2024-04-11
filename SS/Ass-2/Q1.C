@@ -109,6 +109,9 @@ int parse() {
 
 int main() {
   clrscr();
+   printf("\n Name: Dhruv Saija\n");
+  printf("Roll NO: 3159\n");
+  printf("Div:B\n");
   printf("Enter input:");
   scanf("%s", s);
   if (parse()) {
